@@ -6,7 +6,9 @@
 <title>Attendance</title>
 
 <style>
-* { box-sizing: border-box; }
+  {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -15,39 +17,39 @@ body {
   color: #fff;
 }
 
-/* HEADER */
+/* COMPACT HEADER */
 .header {
-  padding: 16px;
+  padding: 12px 16px;
   border-bottom: 1px solid #1f2937;
 }
 
 .name {
-  font-size: 16px;
+  font-size: 14px;
   color: #9ca3af;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
 }
 
 .year {
   color: #9ca3af;
-  font-size: 14px;
+  font-size: 12px;
 }
 
-/* TABS */
+/* COMPACT TABS */
 .tabs {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   padding: 0 16px;
   border-bottom: 1px solid #1f2937;
 }
 
 .tab {
-  padding: 12px 0;
+  padding: 10px 0;
   color: #9ca3af;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .tab.active {
@@ -55,63 +57,75 @@ body {
   border-bottom: 2px solid #4ade80;
 }
 
-/* SECTION */
+/* COMPACT SECTION */
 .section {
   background: #111827;
   color: #6b7280;
-  font-size: 13px;
-  padding: 8px 16px;
+  font-size: 11px;
+  padding: 4px 16px;
+  text-transform: uppercase;
 }
 
-/* ROW */
+/* COMPACT ROW */
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 16px;
+  padding: 8px 16px;
   border-bottom: 1px solid #1f2937;
 }
 
 .left {
-  width: 55px;
+  width: 45px;
 }
 
 .day {
-  font-size: 13px;
+  font-size: 11px;
   color: #9ca3af;
 }
 
 .num {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .times {
   display: flex;
-  gap: 40px;
+  gap: 25px;
 }
 
 .time {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 15px;
+  gap: 6px;
+  font-size: 13px;
 }
 
-/* ICON COLORS */
-.arrival svg { stroke: #4ade80; }
-.departure svg { stroke: #f97316; }
+/* SMALLER ICONS */
+.time svg {
+  width: 16px;
+  height: 16px;
+}
 
-/* BUTTON */
+.arrival svg {
+  stroke: #4ade80;
+}
+
+.departure svg {
+  stroke: #f97316;
+}
+
+/* COMPACT BUTTON */
 .fab {
   position: fixed;
   right: 16px;
   bottom: 20px;
   background: #4ade80;
   color: white;
-  padding: 14px 18px;
-  border-radius: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
   font-weight: 600;
+  font-size: 12px;
 }
 </style>
 </head>
