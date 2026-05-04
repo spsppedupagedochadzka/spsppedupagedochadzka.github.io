@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance</title>
+
+<style>
+body {
+  margin: 0;
+  background: #0f1720;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+}
+
+.container {
+  padding: 16px;
+}
+
+.section {
+  margin-top: 20px;
+  color: #9ca3af;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #1f2937;
+}
+
+.date { width: 60px; }
+
+.day {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.num {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.times {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+/* ICON BASE */
+.icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+}
+
+/* GREEN ARRIVAL (arrow into box) */
+.icon.arrival {
+  border: 2px solid #4ade80;
+  border-radius: 4px;
+}
+
+.icon.arrival::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 8px;
+  height: 2px;
+  background: #4ade80;
+}
+
+.icon.arrival::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  border: solid #4ade80;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+/* ORANGE DEPARTURE (arrow out) */
+.icon.departure {
+  border: 2px solid #f97316;
+  border-radius: 4px;
+}
+
+.icon.departure::after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: 6px;
+  width: 8px;
+  height: 2px;
+  background: #f97316;
+}
+
+.icon.departure::before {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  border: solid #f97316;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(135deg);
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.arrival-text { color: #4ade80; }
+.departure-text { color: #f97316; }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="section">May 04 - 10</div>
+<div class="row">
+  <div class="date"><div class="day">Mon</div><div class="num">04</div></div>
+  <div class="times">
+    <div class="time arrival-text">
+      <span class="icon arrival"></span>07:57
+    </div>
+    <div class="time departure-text">
+      <span class="icon departure"></span>10:33
+    </div>
+  </div>
+</div>
+
+<div class="section">April 27 - May 03</div>
+<div class="row">
+  <div class="date"><div class="day">Thu</div><div class="num">30</div></div>
+  <div class="times">
+    <div class="time arrival-text"><span class="icon arrival"></span>08:00</div>
+    <div class="time departure-text"><span class="icon departure"></span>13:30</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="date"><div class="day">Wed</div><div class="num">29</div></div>
+  <div class="times">
+    <div class="time arrival-text"><span class="icon arrival"></span>07:55</div>
+    <div class="time departure-text"><span class="icon departure"></span>13:31</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="date"><div class="day">Mon</div><div class="num">27</div></div>
+  <div class="times">
+    <div class="time arrival-text"><span class="icon arrival"></span>07:54</div>
+    <div class="time departure-text"><span class="icon departure"></span>14:18</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
